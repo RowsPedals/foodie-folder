@@ -1,0 +1,91 @@
+$primary: #e962eede;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import './chow.scss';
+
+:root {
+    --dark: rgb(49, 11, 11);
+    --purple: rgb(156, 61, 84);
+    --orange: rgb(226, 112, 58);
+    --gold: rgb(238, 183, 107); 
+}
+
+html, body { 
+    margin: 0;
+    height: 100%;
+}
+
+body.home {
+    background-color: var(--dark);
+    font-family: 'Chewy', cursive;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.link-box {
+    background-color: var(--purple);
+    margin: 0 auto;
+    width: 35%;
+    border: 4px solid var(--orange);
+    border-radius: 20px;
+    font-size: 60px;
+    padding: 10px;
+    position: relative;
+
+
+    a {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--gold);
+        text-decoration: none;
+    }
+
+    a:link {
+        color: var(--orange);
+        text-decoration: none;
+    } 
+
+    a:visited {
+        color: var(--orange);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--gold);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: url('../images/Gold.jpg');
+    }
+
+    //Icon Display
+
+    .icon-l {
+        transform: rotate(-10deg);
+        right: 90%;
+    }
+
+    .icon-r {
+        transform: rotate(10deg);
+        left: 90%;
+    }
+
+    .icon-l, .icon-r {
+        font-size: 85%;
+        display: none;
+        position: absolute;  
+        top: -20px;  
+        color: var(--gold);
+    }
+
+    .link:hover {
+        .icon-l, .icon-r {            
+            display: block;
+        }
+    }
+}

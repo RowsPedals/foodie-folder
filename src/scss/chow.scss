@@ -1,0 +1,25 @@
+body.chow {
+    background-color: var(--dark);
+    height: 100%;
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.highlight {
+    background-image: linear-gradient(150deg,  rgba(238,183,10,.5) 0%, rgba(156,61,84,.5) 48%, rgba(49,11,1,.5) 100%), url("../images/Gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: fixed;
+    -webkit-filter: blur(2.5px); //!!double the blur for the sidebar bg!! fuck there isnt 1 anymore..nav maybe?
+}
+
+// ^ Background ^ | v Content v
+
+.btn-secondary {
+
+}
